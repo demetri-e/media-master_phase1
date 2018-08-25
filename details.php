@@ -33,7 +33,7 @@ include("inc/header.php"); ?>
         </div>
         <div class="media-picture">
         <span>
-            <img src="<?php echo $item["img"]; ?>" alt="<?php echo $item["title"]; ?>" />
+            <img class="fade-in" src="<?php echo $item["img"]; ?>" alt="<?php echo $item["title"]; ?>" />
         </span>   
         </div>
 
@@ -101,3 +101,5 @@ include("inc/header.php"); ?>
     </div>
 
 </div>
+
+<?php include("inc/footer.php"); ?>

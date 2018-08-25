@@ -1,21 +1,18 @@
 <html>
 <head>
 	<title><?php echo $pageTitle; ?></title>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron|Rajdhani:400,500" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	 <!-- Mobile-friendly viewport -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 
 </head>
 <body>
 
 	<div class="header">
-
+		
 		<div class="wrapper">
-				<h1 class="branding-title"><a href="./"><span>Personal Media Library</span></a></h1>
-
-			<ul class="nav">
-                <li class="books<?php if ($section == "books") { echo " on"; } ?>"><a href="catalog.php?cat=books"><span>Books</span></a></li>
-                <li class="movies<?php if ($section == "movies") { echo " on"; } ?>"><a href="catalog.php?cat=movies">Movies</a></li>
-                <li class="music<?php if ($section == "music") { echo " on"; } ?>"><a href="catalog.php?cat=music">Music</a></li>
-                <li class="suggest<?php if ($section == "suggest") { echo " on"; } ?>"><a href="suggest.php">Suggest</a></li>
-            </ul>
+			<a href="index.php"><h1>Media Master <span><img src="img/share.png"></span></h1></a>
 
 		</div>
 

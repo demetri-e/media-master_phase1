@@ -99,7 +99,7 @@ body {
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
 a {
-    color: #3888c2;
+    color: #5fbb73;
 }
 a:focus {
     outline: thin dotted;
@@ -113,7 +113,7 @@ a:focus {
 a:active,
 a:hover {
     outline: 0;
-    color: #285f87;
+    color: #128d2d;
 }
 
 /* ==========================================================================
@@ -512,10 +512,11 @@ body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 .wrapper {width: 980px; margin: 0 auto;}
 #content {padding: 20px 0 80px;}
 .header:after {content:"";height:0;display:block;visibility:hidden;clear:both;}
-.header {background: #666; border-bottom: 3px solid #112463;}
-.header .branding-title {float: left; margin: 14px 0 0 5px; font: 0/0 serif; text-shadow: none; color: transparent; width:300px; height:125px;background:url(../img/branding-title2.png) 0 6px no-repeat;padding: 6px 0;}
+.header {background: rgb(0, 90, 12); border-bottom: 3px solid #112463;}
+.header .branding-title {float: left; margin: 14px 0 0 5px; font: 0/0 serif; text-shadow: none; color: transparent; width:300px; height:125px;
+    padding: 6px 0;}
 .header .branding-title a {display: block; height: 125px; width: 225px;}
-.header .nav {float: right; top: 10; right: 0; margin: 0; position: relative; left: 15px; z-index: 99999999;}
+.header .nav {float: right; top: 10; right: 0; margin: 0; position: relative; left: 15px; }
 .header .nav li {display: inline-block; margin: 0; list-style: none;}
 .header .nav li a {
     color: white;
@@ -537,7 +538,7 @@ body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 .header .nav li.movies a {background: url('../img/video-camera.png') no-repeat}
 .header .nav li.music a {background: url('../img/listening.png') no-repeat}
 .header .nav li.suggest a {background: url('../img/light-bulb.png') no-repeat}
-#content {min-height: 400px; background: white;}
+#content {min-height: 400px; background: rgb(65, 65, 65);}
 .section.page:after {content:"";display:block;visibility:hidden;height:0;clear:both;}
 .section.page {padding: 34px 0; background: white;}
 .section.page h1 {
@@ -549,6 +550,7 @@ body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 .section.page .media-details h1 {
     text-align: left;
 }
+
 .section.page p {width: 475px; margin-left: auto; margin-right: auto; }
 .section.page .media-details h1 .price {color: #9d9f4e; padding-right: 10px; font-size: 34px;}
 .section.catalog {padding-bottom: 42px;}
@@ -647,7 +649,7 @@ form input[type="submit"] {
     width: 475px;
     text-align: center;
     border: 0;
-    background: #3888c2;
+    background: #5fbb73;
     color: #FFF;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -694,7 +696,7 @@ form input[type="submit"] {
 }
   .breadcrumbs a {
     text-decoration: none;
-    color: #3888c2;
+    color: #0fb934;
   }
 .note-designer {
     font-size: 14px;
@@ -703,22 +705,342 @@ form input[type="submit"] {
 }
 
 .footer {
-    background: #112463;
-    border-top: 3px solid #dddddd;
-    padding: 42px 0;
+    background:rgb(0, 90, 12);
+
     font-size: 12px;
     color: #a5a5a5;
 }
-.footer ul {margin: 0; padding: 0; float: left;}
-.footer ul li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
+
+
+
+/* ------------ Override Styles ------------------ */
+/* ------------ Override Styles ------------------ */
+body {
+    min-width: 310px;
+    background: rgb(65, 65, 65);
+    font-family: 'Rajdhani', sans-serif;
 }
-.footer ul li:after {content:" | "}
-.footer ul li:last-child:after {content:"";}
-.footer p {margin: 0; padding-right: 3px;}
-.footer a {text-decoration: none; color: #539def; margin: 0 10px;}
-.footer li:first-child a {margin-left: 4px;}
-.footer a:hover, .footer a:active {text-decoration: underline;}
+table {
+    color: #d6d6d6;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+}
+#content {
+    min-height: 100vh;
+    padding: 1.5em 0 4em 0;
+}
+.header {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: none;
+}
+.header h1 {
+    color: #fff;
+    margin: 0;
+    padding-top: .25em;
+    padding-left: .25em;
+    font-weight: 300;
+    padding-bottom: 4px;
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Orbitron', sans-serif;
+}
+.section.page {
+    font-family: 'Rajdhani', sans-serif;
+    color: #d6d6d6;
+}
+ h2,
+ .section.page h1 {
+    padding: 1.5em 0 1em 0;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.25em;
+    color: #d6d6d6;
+}
+.section.page h1 {
+    padding-top: .5em;
+    color: #d6d6d6;
+}
+p.message {
+    color: #000;
+}
+.section.page label {
+    color: #d6d6d6;
+}
+.header a {
+    text-decoration: none;
+}
+.header h1 span img{
+    max-width: 22px;
+    position: relative;
+    top: 2px;
+}
+.header .nav {
+    display: block;
+    float: none;
+    padding-left: 0;
+    margin: 0 auto;
+    margin-right: 5%;
+    }
+    .header .nav li {display: inline-block; margin: 0; list-style: none;}
+.header .nav li a {
+    padding: 32px 0 0;
+    margin: 0;
+    width: 70px;
+    font-size: .75em;
+    text-align: center;
+}
+.header .nav li a span {
+    font-size: 1em;
+}
+.section.catalog {
+    background: rgb(65, 65, 65);
+}
+.section.catalog .wrapper {
+    text-align: center;
+}
+.section.catalog ul.items {
+    margin: 0 0 0 0; 
+    padding: 0; 
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    left: .5em;
+}
+.section.catalog ul.items li {
+    display: block;
+    list-style: none;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    float: left;
+    padding-left: .75em;
+    margin-bottom: 1.5em;
+    height: 250px;
+    max-width: 225px;
+}
+.section.catalog ul.items li img {
+    width: 100%;
+    border: none;
+    opacity: 0.95;
+    max-width: 160px;
+}
+.section.catalog ul.items li a {
+    padding: 0;
+    background: rgb(65, 65, 65);
+    color: #d6d6d6;
+    font-family: 'Rajdhani', sans-serif;
+}
+.section.catalog ul.items li a p {
+    margin: 0;
+    padding-top: 4px;
+}
+.media-picture {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border: none;
+}
+.media-picture span {
+    background: rgb(65, 65, 65);
+    padding-top: 0;
+}
+.media-details {
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 300px;
+}
+.section.page h1 {
+    margin-left: 0;
+}
+.section .wrapper {
+    text-align: center;
+}
+
+.section.page {padding: 34px 0;  background: rgb(65, 65, 65);}
+.section.page p {width: 90%; margin-left: auto; margin-right: auto; }
+
+.breadcrumbs {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 28px 0;
+}
+table {
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*---------- Navigation --------------------*/
+.footer .nav { margin: 0 auto; display: inline-block; padding-left: 0; padding-bottom: 10px;}
+.footer .nav li {display: inline-block; margin: 0 auto; list-style: none;}
+.footer .nav li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 54px;
+    padding:0 10px;
+    width: 48px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .5em;
+}
+.footer .nav li a span {
+    position: relative;
+    top: 22px;
+}
+
+.footer .nav li.on a {text-decoration:underline;}
+.footer .nav li a:hover, .header .nav li a:active {opacity: 0.7;}
+.footer .nav li.books a {background: url('../img/open-book.png') no-repeat; margin-left: 10px; background-position: center;}
+.footer .nav li.movies a {background: url('../img/video-player.png') no-repeat; background-position: center;}
+.footer .nav li.music a {background: url('../img/music-player.png') no-repeat; background-position: center ;}
+.footer .nav li.suggest a {background: url('../img/light-bulb.png') no-repeat; background-position: center;}
+
+
+/*---------- end comment --------------------*/
+.header .hide-small {
+    display: none;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+
+
+
+@media (max-width: 767px) {
+    form {width: 100%; max-width: 300px; margin: 0 auto;}
+    form th,
+    form td {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+    }
+    form td {
+        padding-top: 0;
+        padding-left: 0;
+    }
+    form input[type="submit"] {
+       margin-left: 0;
+       width: 100%; 
+       max-width: 475px;
+    }
+
+}
+@media (min-width: 768px)  {
+    .header .branding-title {
+        display: inline-block;
+        height: 90px;
+        width: 40%;
+    }
+    #content {
+        min-height: 90vh;
+    }
+    .section.catalog ul.items li {
+   
+        height: 280px;
+        max-width: 225px;
+    }
+    .section.catalog ul.items li img {
+        width: 100%;
+    }
+    .section.catalog h2 {
+        padding-top: 2.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header .nav {
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .section.catalog ul.items li {
+        width: 25%;
+    }
+    .section.catalog h2 {
+        padding-bottom: 3em;
+    }
+    #content {
+        padding: 0 20px;
+        min-height: 70vh;
+    }
+    .section.catalog ul.items {
+        margin-left: 17px;
+    }
+    .breadcrumbs {
+        padding-top: 3em;
+    }
+    .media-picture {
+        float: left;
+        
+    }
+    .media-details {
+        float: right;
+        max-width: 460px;
+    }
+    .media-picture, .media-details {
+        margin: 0 auto;
+        display: inline-block;
+        width: 44%;
+        box-sizing: border-box;
+    }
+    .section.page h1 {
+        padding-top: 2em;
+    }
+    .section.catalog h2 {
+        padding-top: 3em;
+    }
+}

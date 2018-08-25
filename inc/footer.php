@@ -2,16 +2,15 @@
 
 	<div class="footer">
 
-		<div class="wrapper">
 
-			<ul>		
-				<li><a href="http://twitter.com/treehouse">Twitter</a></li>
-				<li><a href="https://www.facebook.com/TeamTreehouse">Facebook</a></li>
-			</ul>
+			<ul class="nav">
+                <li class="books<?php if ($section == "books") { echo " on"; } ?>"><a href="catalog.php?cat=books"><span>Books</span></a></li>
+                <li class="movies<?php if ($section == "movies") { echo " on"; } ?>"><a href="catalog.php?cat=movies"><span>Movies</span></a></li>
+                <li class="music<?php if ($section == "music") { echo " on"; } ?>"><a href="catalog.php?cat=music"><span>Music</span></a></li>
+                <li class="suggest<?php if ($section == "suggest") { echo " on"; } ?>"><a href="suggest.php"><span>Ideas</span></a></li>
+            </ul>
 
-			<p>&copy;<?php echo date("Y"); ?> Personal Media Library</p>
 
-		</div>
 	
 	</div>
 
